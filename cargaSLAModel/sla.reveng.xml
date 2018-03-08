@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-schema="facturaciones_historicas" match-name="conclusiones"/>
+  <table-filter match-schema="facturaciones_historicas" match-name="facturacion_registros"/>
+  <table-filter match-schema="facturaciones_historicas" match-name="facturaciones"/>
+  <table-filter match-schema="facturaciones_historicas" match-name="operadoras"/>
+  <table-filter match-schema="sla" match-name="archivos"/>
+  <table-filter match-schema="sla" match-name="bitacoras"/>
+  <table-filter match-schema="sla" match-name="detalle_disponibilidad"/>
+  <table-filter match-schema="sla" match-name="detalle_velocidad"/>
+  <table-filter match-schema="sla" match-name="excepciones_pago"/>
+  <table-filter match-schema="sla" match-name="feriados"/>
+  <table-filter match-schema="sla" match-name="operadoras"/>
+  <table-filter match-schema="sla" match-name="prefacturas"/>
+  <table-filter match-schema="sla" match-name="prefacturas2"/>
+  <table-filter match-schema="sla" match-name="promedios_mesuales"/>
+  <table-filter match-schema="sla" match-name="rbd_estados"/>
+  <table-filter match-schema="sla" match-name="resumen_disponibilidad"/>
+  <table-filter match-schema="sla" match-name="resumen_velocidad"/>
+  <table-filter match-schema="web" match-name="adjudicaciones"/>
+  <table-filter match-schema="web" match-name="adjudicado_estados"/>
+  <table-filter match-schema="web" match-name="comunas"/>
+  <table-filter match-schema="web" match-name="conectado_estados"/>
+  <table-filter match-schema="web" match-name="contactos"/>
+  <table-filter match-schema="web" match-name="instalacion_excepciones"/>
+  <table-filter match-schema="web" match-name="instalaciones"/>
+  <table-filter match-schema="web" match-name="lista_espera"/>
+  <table-filter match-schema="web" match-name="mineduc_estados"/>
+  <table-filter match-schema="web" match-name="operadora_proyectos"/>
+  <table-filter match-schema="web" match-name="operadoras"/>
+  <table-filter match-schema="web" match-name="proyectos"/>
+  <table-filter match-schema="web" match-name="rbd"/>
+  <table-filter match-schema="web" match-name="rbd_estados"/>
+  <table-filter match-schema="web" match-name="regiones"/>
+  <table-filter match-schema="web" match-name="tecnologias"/>
+  <table-filter match-schema="web" match-name="tipo_lista_espera"/>
+  <table-filter match-schema="web" match-name="usuarios"/>
+</hibernate-reverse-engineering>

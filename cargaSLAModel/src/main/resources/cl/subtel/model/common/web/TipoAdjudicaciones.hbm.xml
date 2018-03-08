@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-07-2017 14:39:15 by Hibernate Tools 5.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="cl.subtel.model.common.web.TipoAdjudicaciones" schema="web" table="tipo_adjudicaciones" optimistic-lock="version">
+        <id name="tipoAdjId" type="int">
+            <column name="tipo_adj_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="tipoEsperaTx" type="string">
+            <column name="tipo_espera_tx" length="250">
+                <comment>tipo de espera</comment>
+            </column>
+        </property>
+        <property name="descripcionTx" type="string">
+            <column name="descripcion_tx" length="250">
+                <comment>descripcion</comment>
+            </column>
+        </property>
+        <set name="adjudicacioneses" table="adjudicaciones" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="tipo_adj_id">
+                    <comment>tipo de espera</comment>
+                </column>
+            </key>
+            <one-to-many class="cl.subtel.model.common.web.Adjudicaciones" />
+        </set>
+        <set name="instalacioneses" table="instalaciones" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="tipo_adj_id">
+                    <comment>tipo de espera</comment>
+                </column>
+            </key>
+            <one-to-many class="cl.subtel.model.common.web.Instalaciones" />
+        </set>
+        <set name="listaEsperas" table="lista_espera" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="tipo_adj_id">
+                    <comment>tipo de espera</comment>
+                </column>
+            </key>
+            <one-to-many class="cl.subtel.model.common.web.ListaEspera" />
+        </set>
+    </class>
+</hibernate-mapping>

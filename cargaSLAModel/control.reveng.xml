@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-schema="control" match-name="archivo"/>
+  <table-filter match-schema="control" match-name="archivos_tipos"/>
+  <table-filter match-schema="control" match-name="detalle_error"/>
+  <table-filter match-schema="control" match-name="error_codigos"/>
+  <table-filter match-schema="control" match-name="estados"/>
+  <table-filter match-schema="control" match-name="historial_archivos"/>
+  <table-filter match-schema="control" match-name="operadora"/>
+  <table-filter match-schema="control" match-name="procesos"/>
+  <table-filter match-schema="control" match-name="procesos_detalle"/>
+  <table-filter match-schema="control" match-name="tipos_proceso"/>
+  <table-filter match-schema="control" match-name="usuarios"/>
+</hibernate-reverse-engineering>

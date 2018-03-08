@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-07-2017 14:24:00 by Hibernate Tools 5.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="cl.subtel.model.common.control.ErrorCodigos" schema="control" table="error_codigos" optimistic-lock="version">
+        <id name="errorCodigoId" type="int">
+            <column name="error_codigo_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="codigo" type="java.lang.Integer">
+            <column name="codigo" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="250" />
+        </property>
+        <set name="detalleErrors" table="detalle_error" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="error_codigo_id" />
+            </key>
+            <one-to-many class="cl.subtel.model.common.control.DetalleError" />
+        </set>
+    </class>
+</hibernate-mapping>

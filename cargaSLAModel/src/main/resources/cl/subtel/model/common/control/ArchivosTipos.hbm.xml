@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-07-2017 14:24:00 by Hibernate Tools 5.2.0.CR1 -->
+<hibernate-mapping>
+    <class name="cl.subtel.model.common.control.ArchivosTipos" schema="control" table="archivos_tipos" optimistic-lock="version">
+        <id name="archivoTipoId" type="int">
+            <column name="archivo_tipo_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="tipo" type="string">
+            <column name="tipo" length="100" />
+        </property>
+        <set name="archivos" table="archivo" inverse="true" lazy="false" fetch="select">
+            <key>
+                <column name="archivo_tipo_id" />
+            </key>
+            <one-to-many class="cl.subtel.model.common.control.Archivo" />
+        </set>
+    </class>
+</hibernate-mapping>
